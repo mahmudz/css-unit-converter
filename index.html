@@ -1,0 +1,79 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>CSS Unit Converter</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+		<style>
+			body{
+				margin-top: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row mt-5">
+				<div class="col-md-8 m-auto">
+					<div class="row row-centered">
+						<div class="col-12">
+							<p id="preview" class="text-center">Preview</p>
+							<div class="form-group">
+								<input id="base" type="hidden" value="16" class="form-control disabled">
+							</div>
+						</div>
+					</div>
+					<hr>
+					<div class="row">
+						<div class="col-12">
+							<div class="form-group">
+								<label for="">Pixels</label>
+								<input value="16" id="px" type="text" class="form-control" onkeyup="convert()" placeholder="Pixels">
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="form-group">
+								<label for="">EMs</label>
+								<input id="ems" type="text" class="form-control" onkeyup="convertEm()" placeholder="EMs">
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="form-group">
+								<label for="">Points</label>
+								<input id="pts" type="text" class="form-control" onkeyup="convertPt()" placeholder="Points">
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="form-group">
+								<label for="">Percentages</label>
+								<input id="perc" type="text" class="form-control" onkeyup="convertPer()" placeholder="Percentages">
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="form-group">
+								<label for="">Picas</label>
+								<input id="pc" type="text" class="form-control" onkeyup="convertPc()" placeholder="Picas">
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="form-group">
+								<label for="">Vertical Width</label>
+								<input id="vw" type="text" class="form-control" onkeyup="convertVw()" placeholder="Vertical Width">
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="form-group">
+								<label for="">Vertical Height</label>
+								<input id="vh" type="text" class="form-control" onkeyup="convertVh()" placeholder="Vertical Height">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+		<script src="test.js"></script>
+		<script src="converters.js"></script>
+		<script src="convert.js"></script>
+	</body>
+</html>
